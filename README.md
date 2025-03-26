@@ -1,6 +1,6 @@
 # Legacy Of Solaris ARC Rewrite
 This repository is for the LOS ARC files rewrite which contains modified files from the xenon directory from LOS rewritten for expanded modding compatibility
-[](art/icon.png)
+![](art/icon.png)
 # System
 ## player.arc
 The player.arc file now has new folders for each playable character's lub files containing different lub files for different actions.
