@@ -12,4 +12,4 @@ Some characters with similar proprieties (such as Rouge and Knuckles) might shar
 Reefer to the [LOS player.arc Rewrite Gamebanana page](https://gamebanana.com/wips/92057) for the latest releases
 **PLEASE MAKE SURE THAT WHEN MAKING MODS USING THIS THAT YOU ALWAYS LIST WHICH VERSION OF THE MOD AND WHICH VERSION OF LOS YOU MADE THIS FOR!!**
 ### Current player.arc Rewrite Version:
-1.0.0 (for LOS 2025/03/25)
+1.0.1 (for LOS 2025/03/25)
