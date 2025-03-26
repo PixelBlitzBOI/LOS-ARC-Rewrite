@@ -4,7 +4,7 @@ This repository is for the LOS ARC files rewrite which contains modified files f
 # System
 ## Documentation
 - [player.arc](#playerarc)
-- [scripts.arc](#scriptsarccoming-soon)
+- [scripts.arc](#scriptsarc-coming-soon)
 ## player.arc
 ![](art/playerarcthumbnail.png)
 The player.arc file now has new folders for each playable character's lub files containing different lub files for different actions.
