@@ -4,6 +4,7 @@ This repository is for the LOS ARC files rewrite which contains modified files f
 # System
 ## Documentation
 - [player.arc](#playerarc)
+- [scripts.arc](#scriptsarccoming-soon)
 ## player.arc
 ![](art/playerarcthumbnail.png)
 The player.arc file now has new folders for each playable character's lub files containing different lub files for different actions.
@@ -18,3 +19,5 @@ Reefer to the [LOS player.arc Rewrite Gamebanana page](https://gamebanana.com/wi
 ![](docs/priority.png)
 ### Current player.arc Rewrite Version:
 1.0.1 (for LOS 2025/03/25)
+
+## scripts.arc (Coming Soon)
