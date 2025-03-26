@@ -1,4 +1,5 @@
-script.reload("player/common.lua")
+script.reload("player/elise.lua")
+script.reload("player/princess/gauge-state.lua")
 function SetupModuleSub(_ARG_0_)
   OpenGameMaster(_ARG_0_, gamemaster_module_player)
   OpenLockOn(_ARG_0_, "lockon", stepable_inter)
@@ -6,44 +7,29 @@ function SetupModuleSub(_ARG_0_)
   OpenLockOn(_ARG_0_, "lockon_homing", stepable_pre)
   OpenLightDash(_ARG_0_)
   OpenLockOn(_ARG_0_, "lockon_lightdash", stepable_inter)
-  OpenEffect(_ARG_0_, effect_module_sonic, "player_sonic")
-  OpenSound(_ARG_0_, sound_module_sonic, "player_sonic")
-  OpenGauge(_ARG_0_, gauge_module_sonic)
-  OpenWeapons(_ARG_0_, other_module_sonic_weapons)
-  OpenKynapse(_ARG_0_, "Player", "PlayerBot")
-  OpenLockOn(_ARG_0_, "lockon_chase", stepable_pre)
-  OpenInput(_ARG_0_, input_system_vehicle)
-  OpenOther(_ARG_0_, other_module_rodeo)
-  OpenOther(_ARG_0_, other_module_amigo_change)
-  OpenOther(_ARG_0_, other_module_talk)
-  OpenOther(_ARG_0_, other_module_waterslider)
+  OpenEffect(_ARG_0_, effect_module_princess, "player_himesonic")
+  OpenSound(_ARG_0_, sound_module_sonic, "player_princess")
+  OpenGauge(_ARG_0_, gauge_module_princess)
+  OpenWeapons(_ARG_0_, other_module_princess_weapons)
   OpenOther(_ARG_0_, other_module_item)
+  OpenOther(_ARG_0_, other_module_talk)
+  OpenOther(_ARG_0_, other_module_amigo_change)
   OpenAI(_ARG_0_, ai_module_amigo)
-  OpenLockOn(_ARG_0_, "lockon_chase", stepable_pre)
 end
 function SetupModuleDebugSub(_ARG_0_)
-c_lockon_chase = {
-  type = shape_convex_box,
-  near_x = 5 * meter,
-  near_y = 6 * meter,
-  z = 13 * meter,
-  far_x = 15 * meter,
-  far_y = 13 * meter,
-  sort = lockon_sort_priority_and_distance,
-  lockon = lockon_type_chase
-}
 end
 c_player_name = "sonic"
 debug = not_use
-c_module_state = state_module_sonic
+c_module_state = state_module_princess
 c_module_model = model_module_sonic_new
-c_system_model = model_system_sonic
+c_system_model = model_system_princess
 c_posture_control = posture_control_normal
 c_input_system = input_system_normal
 c_module_gravity = use
-c_model_package = "player/sonic_new"
+c_model_package = "player/princess"
+c_model_package_princess = "player/princess_princess"
+c_model_package_hair = "player/princess_hair"
 c_module_impulse = impulse_module_standard
-c_has_custom_action = use
 c_item_table = {
   {
     flags = equip_boundjump,
@@ -67,8 +53,6 @@ c_hair = {
   "MiddleHair"
 }
 
-script.reload("player/sonic_new/gauge-state.lua", "player/sonic_new/gauge-call.lua")
-
 c_input_border = 0.1
 c_dclick_time = 0.16 * sec
 c_lclick_time = 0.16 * sec
@@ -83,7 +67,6 @@ c_lockon = {
   sort = lockon_sort_priority_and_distance,
   lockon = lockon_type_lockon
 }
-
 c_thunderguard_collision = {
   type = shape_sphere,
   radius = 2 * meter,
@@ -93,12 +76,12 @@ c_thunderguard_collision = {
     z = 0 * meter
   }
 }
-c_tornado_power = 800 * N
-c_tornado_damage = 2 * point
+c_tornado_power = 500 * N
+c_tornado_damage = 1 * point
 c_tornado_collision = {
   type = shape_cylinder,
-  radius = 6 * meter,
-  height = 5 * meter
+  radius = 8 * meter,
+  height = 4 * meter
 }
 c_rotation_method = input_method_sonic_v1
 c_rotation_speed = 8 * (meter / sec)
@@ -143,25 +126,11 @@ c_speedup_acc = (c_speedup_speed_max - c_walk_speed_max) / l_speedup_acc
 c_brake_acc_sand = c_brake_acc * 2
 c_run_acc_sand = c_run_acc * 0.5
 c_jump_speed_sand = SpeedByHeightBias(c_jump_speed, 0.5)
-
+c_homing_smash_charge = 0.5 * sec
+-- importing shit from sonic_new's folder
 script.reload("player/sonic_new/homing-state.lua")
-script.reload("player/sonic_new/homing-call.lua")
 script.reload("player/sonic_new/antigrav-state.lua")
-script.reload("player/sonic_new/antigrav-call.lua")
-script.reload("player/sonic_new/spindash-state.lua")
-script.reload("player/sonic_new/bound-state.lua")
-script.reload("player/sonic_new/bound-call.lua")
-script.reload("player/sonic_new/walljump-state.lua")
 script.reload("player/sonic_new/lightdash-state.lua")
 script.reload("player/sonic_new/lightdash-call.lua")
-script.reload("player/sonic_new/attack-state.lua")
-c_custom_action_slow_bias = 2
-c_custom_action_slow_time = -8
-c_custom_action_machspeed_acc = 4500
-c_custom_action_machspeed_time = 0.2
-c_custom_action_scale = 0.1
-c_scale_run_speed_max = 1.2 * c_run_speed_max
-c_scale_run_acc = 1.2 * c_run_acc
-c_scale_walk_speed_max = 1.2 * c_walk_speed_max
-c_scale_jump_speed = 0.5 * c_jump_speed
-c_scale_jump_block = 0.5 * sec
+script.reload("player/sonic_new/antigrav-call.lua")
+script.reload("player/sonic_new/homing-call.lua")
