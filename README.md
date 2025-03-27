@@ -1,6 +1,6 @@
 # Legacy Of Solaris ARC Rewrite
 This repository is for the LOS ARC files rewrite which contains modified files from the xenon directory from LOS rewritten for expanded modding compatibility
-![](art/Thumbnail.png)
+![](art/Thumbnail1.png)
 # System
 ## Documentation
 - [player.arc](#playerarc)
