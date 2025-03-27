@@ -48,30 +48,6 @@ StageList = {
     Comment = "\148\160\131}\131b\131v\n\131Z\131b\131g\129F0%"
   },
   {
-    Story = "Sonic",
-    Stage = "wvo ( Wave Ocean )",
-    Area = "Area A",
-    Player = "Sonic",
-    ID = "wvo/sonic/a",
-    Comment = "\148\160\131}\131b\131v\n\131Z\131b\131g\129F0%"
-  },
-  {
-    Story = "Sonic",
-    Stage = "wvo ( Wave Ocean )",
-    Area = "Area A",
-    Player = "Tails",
-    ID = "wvo/tails/a",
-    Comment = "\148\160\131}\131b\131v\n\131Z\131b\131g\129F0%"
-  },
-  {
-    Story = "Sonic",
-    Stage = "wvo ( Wave Ocean )",
-    Area = "Area B",
-    Player = "Sonic",
-    ID = "wvo/sonic/b",
-    Comment = "\148\160\131}\131b\131v\129i\137\188\129j\n\131Z\131b\131g\129F0%"
-  },
-  {
     Story = "Shadow",
     Stage = "wvo ( Wave Ocean )",
     Area = "Area A",
@@ -166,14 +142,6 @@ StageList = {
     Player = "Silver",
     ID = "tpj/silver/c",
     Comment = "\146n\140`\150\179\130\181\n\131Z\131b\131g\129F0%"
-  },
-  {
-    Story = "Sonic",
-    Stage = "dtd ( Dusty Desert )",
-    Area = "Area A",
-    Player = "Sonic",
-    ID = "dtd/sonic/a",
-    Comment = "\137\188\131}\131b\131v\130\240\131f\131U\131C\131\147\130\170\130\162\130\182\130\193\130\189\n\131Z\131b\131g\129F10%"
   },
   {
     Story = "Shadow",
@@ -3596,4 +3564,13 @@ StageList = {
     Comment = "\131X\131e\129[\131W\131Z\131\140\131N\131g"
   }
 }
+-- sonic's story
+script.reload("scripts/stage/stageselect/sonic/wvo_sonic.lua") -- <- also shares Tails' wvo stage
+script.reload("scripts/stage/stageselect/sonic/dtd_sonic.lua")
+--script.reload("scripts/stage/stageselect/sonic/wap_sonic.lua") <- not yet implimented
+--script.reload("scripts/stage/stageselect/sonic/csc_sonic.lua") <- not yet implimented
+--script.reload("scripts/stage/stageselect/sonic/flc_sonic.lua") <- not yet implimented
+--script.reload("scripts/stage/stageselect/sonic/rct_sonic.lua") <- not yet implimented
+--script.reload("scripts/stage/stageselect/sonic/tpj_sonic.lua") <- not yet implimented
 script.reload("scripts/stage/stageselect/sonic/kdv_sonic.lua")
+--script.reload("scripts/stage/stageselect/sonic/aqa_sonic.lua") <- not yet implimented
