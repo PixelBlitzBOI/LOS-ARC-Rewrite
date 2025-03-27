@@ -205,3 +205,5 @@ c_chaos_spear_accumulate_wait = 0.5 * sec
 c_chaos_spear_stiffening_time = 0.3 * sec
 c_chaos_smash_accumulate_wait = 0.2 * sec
 c_chaos_smash_preliminary = 0.2 * sec
+-- ignore all that
+script.reload("player/shadow.lua")

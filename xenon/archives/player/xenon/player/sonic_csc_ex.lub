@@ -214,4 +214,4 @@ c_scale_walk_speed_max = 1.2 * c_walk_speed_max
 c_scale_jump_speed = 0.5 * c_jump_speed
 c_scale_jump_block = 0.5 * sec
 -- Ingore everything above
-script.reload("player/sonic_new.lub")
+script.reload("player/sonic_new.lua")
