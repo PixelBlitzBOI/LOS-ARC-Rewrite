@@ -24,3 +24,10 @@ Reefer to the [LOS player.arc Rewrite Gamebanana page](https://gamebanana.com/wi
 1.0.1 (for LOS 2025/03/25)
 
 ## scripts.arc (Coming Soon)
+The scripts.arc file now has many more folders to handle stages and suprisingly, this change reduces loading times!
+
+(More details will be covered within it's release)
+
+### Current scripts.arc Rewrite Version:
+0.1.0 (for LOS 2025/03/27)
+Currently under early development
