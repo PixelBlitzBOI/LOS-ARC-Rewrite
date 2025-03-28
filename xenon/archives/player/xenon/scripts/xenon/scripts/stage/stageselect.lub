@@ -168,38 +168,6 @@ StageList = {
     Comment = "\137\188\131}\131b\131v\n\131Z\131b\131g\129F10%"
   },
   {
-    Story = "Sonic",
-    Stage = "csc ( Crisis City )",
-    Area = "Area A",
-    Player = "Sonic",
-    ID = "csc/sonic/a",
-    Comment = "\131X\131m\129[\131{\129[\131h\n\131Z\131b\131g\129F90%\n\130\160\130\198\130\205\146\178\144\174\129\149\131q\131\147\131g\131{\131C\131X"
-  },
-  {
-    Story = "Sonic",
-    Stage = "csc ( Crisis City )",
-    Area = "Area B",
-    Player = "Sonic",
-    ID = "csc/sonic/b",
-    Comment = "\131Z\131b\131g\129F90%\n\130\160\130\198\130\205\146\178\144\174\129\149\131q\131\147\131g\131{\131C\131X"
-  },
-  {
-    Story = "Sonic",
-    Stage = "csc ( Crisis City )",
-    Area = "Area C",
-    Player = "Sonic",
-    ID = "csc/sonic/c",
-    Comment = "\149\130\151V\146n\140`\150\202\n\131Z\131b\131g\129F95%\n\130\160\130\198\130\205\146\178\144\174\129\149\131q\131\147\131g\131{\131C\131X"
-  },
-  {
-    Story = "Sonic",
-    Stage = "csc ( Crisis City )",
-    Area = "Area E",
-    Player = "Sonic",
-    ID = "csc/sonic/e",
-    Comment = "\141\130\145\172\136\218\147\174\150\202\n\131Z\131b\131g\129F80%\n\146\199\130\162\130\169\130\175\130\231\130\234\131p\129[\131g\130\205\131J\131\129\131\137\131R\131\138\131W\131\135\131\147\130\204\143C\144\179\145\206\137\158\145\210\130\191"
-  },
-  {
     Story = "Shadow",
     Stage = "csc ( Crisis City )",
     Area = "Area A",
@@ -3552,7 +3520,7 @@ StageList = {
 script.reload("scripts/stage/stageselect/sonic/wvo_sonic.lua") -- <- also shares Tails' wvo stage
 script.reload("scripts/stage/stageselect/sonic/dtd_sonic.lua")
 script.reload("scripts/stage/stageselect/sonic/wap_sonic.lua")
---script.reload("scripts/stage/stageselect/sonic/csc_sonic.lua") <- not yet implimented
+script.reload("scripts/stage/stageselect/sonic/csc_sonic.lua")
 --script.reload("scripts/stage/stageselect/sonic/flc_sonic.lua") <- not yet implimented
 --script.reload("scripts/stage/stageselect/sonic/rct_sonic.lua") <- not yet implimented
 --script.reload("scripts/stage/stageselect/sonic/tpj_sonic.lua") <- not yet implimented
